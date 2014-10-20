@@ -1,5 +1,5 @@
 Puppet pciutils Module
-=========================
+======================
 
 [![Build Status](https://travis-ci.org/jhoblitt/puppet-pciutils.png)](https://travis-ci.org/jhoblitt/puppet-pciutils)
 
@@ -18,19 +18,36 @@ Puppet pciutils Module
 Overview
 --------
 
+Manages the pciutils package
+
 
 Description
 -----------
 
+Manages the installation state of the
+[`pciutils`](http://mj.ucw.cz/sw/pciutils/) package and (*eventually*) facts
+about the PCI devices present in the system.
 
 Usage
 -----
+
+```puppet
+include ::pciutils
+```
+
+```puppet
+class { '::pciutils':
+  ensure => 'present', # present, absent, or latest
+}
+```
 
 
 Limitations
 -----------
 
 ### Tested Platforms
+
+* el6.x
 
 
 Versioning
@@ -49,4 +66,4 @@ Please log tickets and issues at
 
 See Also
 --------
-
+* [`pciutils` homepage](http://mj.ucw.cz/sw/pciutils/)

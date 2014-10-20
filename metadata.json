@@ -2,7 +2,7 @@
   "name": "jhoblitt-pciutils",
   "version": "0.1.0",
   "author": "Joshua Hoblitt <jhoblitt@cpan.org>",
-  "summary": "module skeleton",
+  "summary": "Manages the pciutils package",
   "license": "Apache-2.0",
   "source": "https://github.com/jhoblitt/puppet-pciutils",
   "project_page": "https://github.com/jhoblitt/puppet-pciutils",
