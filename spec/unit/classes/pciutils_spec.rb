@@ -39,7 +39,7 @@ describe 'pciutils', :type => :class do
     end
 
     it 'should fail' do
-      expect { should }.to raise_error(Puppet::Error, /pciutils is not supported on AIX/)
+      should raise_error(Puppet::Error, /pciutils is not supported on AIX/)
     end
   end # unsupported osfmaily
 
